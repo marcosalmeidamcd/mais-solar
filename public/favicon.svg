@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Fundo azul da marca -->
+  <rect width="64" height="64" rx="12" fill="#1a7ab8"/>
+
+  <!-- Ícone exatamente igual ao Logo.jsx, centralizado -->
+  <!-- viewBox do ícone original: x=0-60, y=0-70 → escala ~0.82, offset x=2, y=-2 -->
+  <g transform="translate(2, -1) scale(0.985)">
+
+    <!-- Raios do sol -->
+    <g stroke="#F5A623" stroke-width="2.8" stroke-linecap="round">
+      <line x1="30" y1="4"  x2="30" y2="10"/>
+      <line x1="30" y1="32" x2="30" y2="38"/>
+      <line x1="12" y1="11" x2="16.5" y2="15.5"/>
+      <line x1="48" y1="11" x2="43.5" y2="15.5"/>
+      <line x1="6"  y1="21" x2="12"  y2="21"/>
+      <line x1="54" y1="21" x2="48"  y2="21"/>
+      <line x1="12" y1="31" x2="16.5" y2="26.5"/>
+      <line x1="48" y1="31" x2="43.5" y2="26.5"/>
+    </g>
+
+    <!-- Círculo do sol -->
+    <circle cx="30" cy="21" r="7.5" fill="#F5A623"/>
+
+    <!-- Telhado -->
+    <polygon points="30,36 10,50 50,50" fill="white"/>
+
+    <!-- Corpo da casa -->
+    <rect x="16" y="50" width="28" height="20" rx="2" fill="white"/>
+
+    <!-- Porta azul -->
+    <rect x="23" y="58" width="14" height="12" rx="1.5" fill="#1a7ab8"/>
+  </g>
+</svg>

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@300;400;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Azul da logo */
+  --brand-blue: #1a7ab8;
+  --brand-blue-dark: #0d5a8a;
+  --brand-blue-darker: #083d60;
+  --brand-blue-light: #2a9ad4;
+  --brand-blue-pale: #e8f4fc;
+
+  /* Laranja solar (acento) */
+  --primary: #F5A623;
+  --primary-dark: #E08A00;
+  --primary-light: #FFD080;
+
+  /* Textos e fundos */
+  --secondary: #0d3a57;
+  --secondary-light: #1a5f8a;
+  --white: #FFFFFF;
+  --gray-50: #F0F7FD;
+  --gray-100: #E8F2FB;
+  --gray-200: #D0E6F5;
+  --gray-300: #A8CCE8;
+  --gray-400: #7aaec9;
+  --gray-500: #4d89a8;
+  --gray-600: #2e6585;
+  --gray-700: #1e4a65;
+  --gray-800: #122e40;
+  --gray-900: #091d2b;
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Sora', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--white);
+  color: var(--gray-900);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-900);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::selection {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.section-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    padding: 0 1.25rem;
+  }
+}
