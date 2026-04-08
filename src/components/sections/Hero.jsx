@@ -84,24 +84,6 @@ export default function Hero() {
       }}>
         {/* Left: Text */}
         <div className="hero-text">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            style={{
-              display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
-              background: 'rgba(245,166,35,0.12)',
-              border: '1px solid rgba(245,166,35,0.3)',
-              borderRadius: 100, padding: '0.4rem 1rem',
-              marginBottom: '1.5rem',
-            }}
-          >
-            <span style={{ width: 8, height: 8, borderRadius: '50%', background: '#F5A623', display: 'block', animation: 'pulse 2s infinite' }} />
-            <span style={{ color: '#F5A623', fontSize: '0.8rem', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
-              Energia Solar em Todo o Brasil
-            </span>
-          </motion.div>
-
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

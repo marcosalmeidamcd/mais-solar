@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import Logo from './Logo';
 
 const navLinks = [
@@ -88,17 +88,6 @@ export default function Navbar() {
 
           {/* CTA */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }} className="desktop-nav">
-            <a
-              href="tel:+5562991754566"
-              style={{
-                display: 'flex', alignItems: 'center', gap: '0.4rem',
-                color: 'rgba(255,255,255,0.7)', textDecoration: 'none',
-                fontSize: '0.85rem', fontWeight: 500,
-              }}
-            >
-              <Phone size={14} />
-              (62) 99175-4566
-            </a>
             <motion.button
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
