@@ -73,7 +73,7 @@ export default function Hero() {
       }} />
 
       {/* Main content */}
-      <div className="section-container" style={{
+      <div className="section-container hero-grid" style={{
         flex: 1,
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
@@ -83,7 +83,7 @@ export default function Hero() {
         paddingBottom: '2rem',
       }}>
         {/* Left: Text */}
-        <div>
+        <div className="hero-text">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -147,7 +147,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-            style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '2.5rem' }}
+            className="hero-badges" style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '2.5rem' }}
           >
             {badges.map(({ icon: Icon, text }) => (
               <div
@@ -170,7 +170,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}
+            className="hero-ctas" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}
           >
             <motion.button
               whileHover={{ scale: 1.04, boxShadow: '0 8px 30px rgba(245,166,35,0.45)' }}
@@ -208,6 +208,7 @@ export default function Hero() {
 
         {/* Right: 3D Scene */}
         <motion.div
+          className="hero-3d"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
@@ -289,14 +290,26 @@ export default function Hero() {
           50% { opacity: 0.5; transform: scale(0.85); }
         }
         @media (max-width: 768px) {
-          #home > div > div:first-child {
-            grid-column: 1 / -1;
-          }
-          #home > div {
+          #home .hero-grid {
             grid-template-columns: 1fr !important;
+            padding-top: 5rem !important;
+            padding-bottom: 1rem !important;
           }
-          #home > div > div:last-child {
-            display: none;
+          #home .hero-3d {
+            display: none !important;
+          }
+          #home .hero-text {
+            text-align: center;
+          }
+          #home .hero-text p {
+            margin-left: auto;
+            margin-right: auto;
+          }
+          #home .hero-badges {
+            justify-content: center !important;
+          }
+          #home .hero-ctas {
+            justify-content: center !important;
           }
         }
       `}</style>

@@ -119,7 +119,7 @@ export default function Footer() {
               Newsletter mensal com novidades do mercado solar.
             </p>
           </div>
-          <div style={{ display: 'flex', gap: '0.5rem' }}>
+          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
             <input
               type="email"
               placeholder="seu@email.com.br"
@@ -129,7 +129,7 @@ export default function Footer() {
                 borderRadius: 10, padding: '0.65rem 1rem',
                 color: 'white', fontSize: '0.875rem',
                 fontFamily: 'var(--font-sans)', outline: 'none',
-                minWidth: 220,
+                flex: '1 1 180px',
               }}
             />
             <button style={{
@@ -191,6 +191,12 @@ export default function Footer() {
         @media (max-width: 600px) {
           footer > div > div:first-child {
             grid-template-columns: 1fr !important;
+          }
+          footer {
+            padding: 3rem 0 2rem !important;
+          }
+          footer > div > div:first-child {
+            margin-bottom: 2rem !important;
           }
         }
       `}</style>

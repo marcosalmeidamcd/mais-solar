@@ -82,7 +82,7 @@ export default function Testimonials() {
               style={{
                 background: 'rgba(255,255,255,0.06)',
                 border: '1px solid rgba(255,255,255,0.1)',
-                borderRadius: 24, padding: '3rem',
+                borderRadius: 24, padding: 'clamp(1.25rem, 5vw, 3rem)',
                 backdropFilter: 'blur(16px)',
                 position: 'relative',
               }}
@@ -97,7 +97,7 @@ export default function Testimonials() {
 
               <p style={{
                 color: 'rgba(255,255,255,0.85)',
-                fontSize: '1.15rem', lineHeight: 1.8,
+                fontSize: 'clamp(0.95rem, 3vw, 1.15rem)', lineHeight: 1.8,
                 marginTop: '1.25rem', marginBottom: '2rem',
                 fontStyle: 'italic',
               }}>
